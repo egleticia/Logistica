@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Application", "Logistica.Application\Logistica.Application.csproj", "{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0} = {67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Domain", "Logistica.Domain\Logistica.Domain.csproj", "{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Persistence", "Logistica.Persistence\Logistica.Persistence.csproj", "{540B3486-1490-4CEE-B466-39AB62560C9B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2} = {FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.API", "Logistica.API\Logistica.API.csproj", "{C12A5288-E694-4D6B-9EFC-2B20A9A648F0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{540B3486-1490-4CEE-B466-39AB62560C9B} = {540B3486-1490-4CEE-B466-39AB62560C9B}
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2} = {FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logistica.Tests", "Logistica.Tests\Logistica.Tests.csproj", "{C3195EC7-34E7-4C55-8046-EB42349209F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBE61C2D-B2E6-4373-8F9F-8D2C85C8F5B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67E52608-B5BC-4C43-BAC5-ED286DDDA9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{540B3486-1490-4CEE-B466-39AB62560C9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{540B3486-1490-4CEE-B466-39AB62560C9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{540B3486-1490-4CEE-B466-39AB62560C9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{540B3486-1490-4CEE-B466-39AB62560C9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12A5288-E694-4D6B-9EFC-2B20A9A648F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12A5288-E694-4D6B-9EFC-2B20A9A648F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12A5288-E694-4D6B-9EFC-2B20A9A648F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12A5288-E694-4D6B-9EFC-2B20A9A648F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3195EC7-34E7-4C55-8046-EB42349209F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3195EC7-34E7-4C55-8046-EB42349209F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3195EC7-34E7-4C55-8046-EB42349209F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3195EC7-34E7-4C55-8046-EB42349209F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A292546-F4CA-4386-8E01-ADBC137E07DB}
+	EndGlobalSection
+EndGlobal
