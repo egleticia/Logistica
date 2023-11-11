@@ -1,0 +1,12 @@
+C:\GIT\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.deps.json
+C:\GIT\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.dll
+C:\GIT\Logistica\Logistica.Application\bin\Debug\net6.0\Logistica.Application.pdb
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.csproj.AssemblyReference.cache
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.AssemblyInfoInputs.cache
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.AssemblyInfo.cs
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.csproj.CoreCompileInputs.cache
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.dll
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\refint\Logistica.Application.dll
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\Logistica.Application.pdb
+C:\GIT\Logistica\Logistica.Application\obj\Debug\net6.0\ref\Logistica.Application.dll

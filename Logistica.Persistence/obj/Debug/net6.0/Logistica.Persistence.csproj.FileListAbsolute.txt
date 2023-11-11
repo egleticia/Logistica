@@ -1,0 +1,15 @@
+C:\GIT\Logistica\Logistica.Persistence\bin\Debug\net6.0\Logistica.Persistence.deps.json
+C:\GIT\Logistica\Logistica.Persistence\bin\Debug\net6.0\Logistica.Persistence.dll
+C:\GIT\Logistica\Logistica.Persistence\bin\Debug\net6.0\Logistica.Persistence.pdb
+C:\GIT\Logistica\Logistica.Persistence\bin\Debug\net6.0\Logistica.Domain.dll
+C:\GIT\Logistica\Logistica.Persistence\bin\Debug\net6.0\Logistica.Domain.pdb
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.csproj.AssemblyReference.cache
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.AssemblyInfoInputs.cache
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.AssemblyInfo.cs
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.csproj.CoreCompileInputs.cache
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.csproj.CopyComplete
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.dll
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\refint\Logistica.Persistence.dll
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\Logistica.Persistence.pdb
+C:\GIT\Logistica\Logistica.Persistence\obj\Debug\net6.0\ref\Logistica.Persistence.dll

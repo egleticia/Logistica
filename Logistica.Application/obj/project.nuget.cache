@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "YvOoKxWH51MoqyIyCJzzkGXijm7uTx4bq+upjFa1aGzyX1lbHWyElGwtIkfommI+tXKHOJwa2wbhPq0kl/ZJDg==",
+  "dgSpecHash": "ub12ged2yDDP+1tm6ykcjmOLNc/q6q70Wy83dnHNY91H+zRw9L0oX4HyzwqeAjHzBYS26F9CMr4AyMLLuQYKNA==",
   "success": true,
   "projectFilePath": "C:\\GIT\\Logistica\\Logistica.Application\\Logistica.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Letic\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.0\\fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
