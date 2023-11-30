@@ -1,5 +1,4 @@
-﻿
-using Logistica.Domain.Entities;
+﻿using Logistica.Domain.Entities;
 
 namespace Logistica.Domain.Interfaces
 {
