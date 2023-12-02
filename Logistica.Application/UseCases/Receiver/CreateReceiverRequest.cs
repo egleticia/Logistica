@@ -1,7 +1,6 @@
-﻿
+﻿using MediatR;
+
 namespace Logistica.Application.UseCases.Receiver
 {
-    public class CreateReceiverRequest
-    {
-    }
+    public sealed record CreateReceiverRequest(Domain.Entities.Address Adress, string Name) : IRequest<CreateReceiverResponse>;
 }
