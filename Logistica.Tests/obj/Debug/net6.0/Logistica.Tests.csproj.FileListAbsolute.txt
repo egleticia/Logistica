@@ -8,16 +8,6 @@ C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Logistica.Tests.runtimeconfig.
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Logistica.Tests.dll
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Logistica.Tests.pdb
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
-C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 C:\GIT\Logistica\Logistica.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll

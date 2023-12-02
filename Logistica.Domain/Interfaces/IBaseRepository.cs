@@ -10,6 +10,6 @@ namespace Logistica.Domain.Interfaces
         public void Delete(T entity);
 
         public Task<T> Get(Guid id, CancellationToken cancellationToken);
-        public Task<T> GetAll(CancellationToken cancellationToken);
+        public Task<List<T>> GetAll(CancellationToken cancellationToken);
     }
 }
