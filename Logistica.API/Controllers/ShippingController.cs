@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Logistica.Application.UseCases.Shipping.CreateShipping;
+using Logistica.Application.UseCases.Shipping.DeleteShipping;
+using Logistica.Application.UseCases.Shipping.GetAllShipping;
+using Logistica.Application.UseCases.Shipping.GetShippingById;
+using Logistica.Application.UseCases.Shipping.UpdateShipping;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Logistica.API.Controllers
 {
@@ -6,31 +12,90 @@ namespace Logistica.API.Controllers
     [ApiController]
     public class ShippingController : ControllerBase
     {
+        IMediator _mediator;
+
+        public ShippingController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        /// <summary>
+        /// Obtém todas as entregas
+        /// </summary>
+        /// <response code="200">Obtém todos os dados.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<List<GetAllShippingResponse>>> GetAll(CancellationToken cancellationToken)
         {
-            return new string[] { "value1", "value2" };
+            var response = await _mediator.Send(new GetAllShippingRequest(), cancellationToken);
+            return Ok(response);
         }
 
+        /// <summary>
+        /// Obtém entrega por Id
+        /// </summary>
+        /// <param name="id">Id da entrega.</param>
+        /// <response code="200">Obtém entrega.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<GetShippingByIdResponse>> Get(Guid? id, CancellationToken cancellationToken)
         {
-            return "value";
+            if (id is null) { return BadRequest(); }
+
+            var request = new GetShippingByIdRequest(id.Value);
+            var response = await _mediator.Send(request, cancellationToken);
+
+            if (response is null) { return NotFound(); }
+            return Ok(response);
         }
 
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
+        /// <summary>
+        /// Atualiza entrega
+        /// </summary>
+        /// <param name="request">Dados da entrega.</param>
+        /// <response code="200">Atualiza entrega.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<UpdateShippingResponse>> Update(Guid id, UpdateShippingRequest request, CancellationToken cancellationToken)
         {
+            if (id != request.Id)
+            {
+                return BadRequest();
+            }
+            var response = await _mediator.Send(request, cancellationToken);
+            return Ok(response);
         }
 
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        /// <summary>
+        /// Cria entrega
+        /// </summary>
+        /// <param name="request">Dados da entrega.</param>
+        /// <response code="201">Cria entrega.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateShippingRequest request)
         {
+            var product = await _mediator.Send(request);
+            return Ok(product);
+        }
+
+        /// <summary>
+        /// Delete entrega
+        /// </summary>
+        /// <param name="id">Id da entrega.</param>
+        /// <response code="200">Deleta entrega.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(Guid? id, CancellationToken cancellationToken)
+        {
+            if (id is null)
+            {
+                return BadRequest();
+            }
+
+            var deleteRequest = new DeleteShippingRequest(id.Value);
+            var response = await _mediator.Send(deleteRequest, cancellationToken);
+            return Ok(response);
         }
     }
 }

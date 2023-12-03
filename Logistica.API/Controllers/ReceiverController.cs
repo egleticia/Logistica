@@ -1,4 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Logistica.Application.UseCases.Receiver.CreateReceiver;
+using Logistica.Application.UseCases.Receiver.DeleteReceiver;
+using Logistica.Application.UseCases.Receiver.GetAllReceiver;
+using Logistica.Application.UseCases.Receiver.GetReceiverById;
+using Logistica.Application.UseCases.Receiver.UpdateReceiver;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace Logistica.API.Controllers
@@ -7,31 +13,90 @@ namespace Logistica.API.Controllers
     [ApiController]
     public class ReceiverController : ControllerBase
     {
+        IMediator _mediator;
+
+        public ReceiverController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        /// <summary>
+        /// Obtém todos os recebedores
+        /// </summary>
+        /// <response code="200">Obtém todos os dados.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<List<GetAllReceiverResponse>>> GetAll(CancellationToken cancellationToken)
         {
-            return new string[] { "value1", "value2" };
+            var response = await _mediator.Send(new GetAllReceiverRequest(), cancellationToken);
+            return Ok(response);
         }
 
+        /// <summary>
+        /// Obtém recebedor por Id
+        /// </summary>
+        /// <param name="id">Id do recebedor.</param>
+        /// <response code="200">Obtém recebedor.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<GetReceiverByIdResponse>> Get(Guid? id, CancellationToken cancellationToken)
         {
-            return "value";
+            if (id is null) { return BadRequest(); }
+
+            var request = new GetReceiverByIdRequest(id.Value);
+            var response = await _mediator.Send(request, cancellationToken);
+
+            if (response is null) { return NotFound(); }
+            return Ok(response);
         }
 
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
+        /// <summary>
+        /// Atualiza recebedor
+        /// </summary>
+        /// <param name="request">Dados do recebedor.</param>
+        /// <response code="200">Atualiza recebedor.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<ActionResult<UpdateReceiverResponse>> Update(Guid id, UpdateReceiverRequest request, CancellationToken cancellationToken)
         {
+            if (id != request.Id)
+            {
+                return BadRequest();
+            }
+            var response = await _mediator.Send(request, cancellationToken);
+            return Ok(response);
         }
 
-        [HttpDelete("{id}")]
-        public void Delete(int id)
+        /// <summary>
+        /// Cria recebedor
+        /// </summary>
+        /// <param name="request">Dados do recebedor.</param>
+        /// <response code="201">Cria recebedor.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
+        [HttpPost]
+        public async Task<IActionResult> Create(CreateReceiverRequest request)
         {
+            var product = await _mediator.Send(request);
+            return Ok(product);
+        }
+
+        /// <summary>
+        /// Delete recebedor
+        /// </summary>
+        /// <param name="id">Id do recebedor.</param>
+        /// <response code="200">Deleta recebedor.</response>
+        /// <response code="400">Requisição inválida ou erro.</response>
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> Delete(Guid? id, CancellationToken cancellationToken)
+        {
+            if (id is null)
+            {
+                return BadRequest();
+            }
+
+            var deleteRequest = new DeleteReceiverRequest(id.Value);
+            var response = await _mediator.Send(deleteRequest, cancellationToken);
+            return Ok(response);
         }
     }
 }

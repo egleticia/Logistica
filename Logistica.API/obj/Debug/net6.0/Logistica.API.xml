@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Logistica.API</name>
+    </assembly>
+    <members>
+        <member name="M:Logistica.API.Controllers.AddressController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Obtém todos os endereços
+            </summary>
+            <response code="200">Obtém todos os dados.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.AddressController.Get(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Obtém endereço por Id
+            </summary>
+            <param name="id">Id do endereço.</param>
+            <response code="200">Obtém endereço.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.AddressController.Update(System.Guid,Logistica.Application.UseCases.Address.UpdateAddress.UpdateAddressRequest,System.Threading.CancellationToken)">
+            <summary>
+            Atualiza endereço
+            </summary>
+            <param name="request">Dados do endereço.</param>
+            <response code="200">Atualiza endereço.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.AddressController.Create(Logistica.Application.UseCases.Address.CreateAddress.CreateAddressRequest)">
+            <summary>
+            Cria endereço
+            </summary>
+            <param name="request">Dados do endereço.</param>
+            <response code="201">Cria endereço.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.AddressController.Delete(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Delete endereço
+            </summary>
+            <param name="id">Id do endereço.</param>
+            <response code="200">Deleta endereço.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ProductController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Obtém todos os produtos
+            </summary>
+            <response code="200">Obtém todos os dados.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ProductController.Get(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Obtém produto por Id
+            </summary>
+            <param name="id">Id do produto.</param>
+            <response code="200">Obtém prosuto.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ProductController.Update(System.Guid,Logistica.Application.UseCases.Address.UpdateAddress.UpdateAddressRequest,System.Threading.CancellationToken)">
+            <summary>
+            Atualiza produto
+            </summary>
+            <param name="request">Dados do produto.</param>
+            <response code="200">Atualiza produto.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ProductController.Create(Logistica.Application.UseCases.Product.CreateProduct.CreateProductRequest)">
+            <summary>
+            Cria produto
+            </summary>
+            <param name="request">Dados do produto.</param>
+            <response code="201">Cria produto.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ProductController.Delete(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Delete produto
+            </summary>
+            <param name="id">Id do produto.</param>
+            <response code="200">Deleta produto.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.PurchaseNotificationController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Obtém todas as notificações de compra
+            </summary>
+            <response code="200">Obtém todos os dados.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.PurchaseNotificationController.Get(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Obtém notificações de compra por Id
+            </summary>
+            <param name="id">Id da notificações de compra.</param>
+            <response code="200">Obtém endereço.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.PurchaseNotificationController.Create(Logistica.Application.UseCases.PurchaseNotification.CreatePurchaseNotification.CreatePurchaseNotificationRequest)">
+            <summary>
+            Cria notificaçõe de compra
+            </summary>
+            <param name="request">Dados da notificações de compra.</param>
+            <response code="201">Cria notificações de compra.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.PurchaseNotificationController.Delete(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Delete notificações de compra
+            </summary>
+            <param name="id">Id da notificações de compra.</param>
+            <response code="200">Deleta notificações de compra.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ReceiverController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Obtém todos os recebedores
+            </summary>
+            <response code="200">Obtém todos os dados.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ReceiverController.Get(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Obtém recebedor por Id
+            </summary>
+            <param name="id">Id do recebedor.</param>
+            <response code="200">Obtém recebedor.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ReceiverController.Update(System.Guid,Logistica.Application.UseCases.Receiver.UpdateReceiver.UpdateReceiverRequest,System.Threading.CancellationToken)">
+            <summary>
+            Atualiza recebedor
+            </summary>
+            <param name="request">Dados do recebedor.</param>
+            <response code="200">Atualiza recebedor.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ReceiverController.Create(Logistica.Application.UseCases.Receiver.CreateReceiver.CreateReceiverRequest)">
+            <summary>
+            Cria recebedor
+            </summary>
+            <param name="request">Dados do recebedor.</param>
+            <response code="201">Cria recebedor.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ReceiverController.Delete(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Delete recebedor
+            </summary>
+            <param name="id">Id do recebedor.</param>
+            <response code="200">Deleta recebedor.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ShippingController.GetAll(System.Threading.CancellationToken)">
+            <summary>
+            Obtém todas as entregas
+            </summary>
+            <response code="200">Obtém todos os dados.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ShippingController.Get(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Obtém entrega por Id
+            </summary>
+            <param name="id">Id da entrega.</param>
+            <response code="200">Obtém entrega.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ShippingController.Update(System.Guid,Logistica.Application.UseCases.Shipping.UpdateShipping.UpdateShippingRequest,System.Threading.CancellationToken)">
+            <summary>
+            Atualiza entrega
+            </summary>
+            <param name="request">Dados da entrega.</param>
+            <response code="200">Atualiza entrega.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ShippingController.Create(Logistica.Application.UseCases.Shipping.CreateShipping.CreateShippingRequest)">
+            <summary>
+            Cria entrega
+            </summary>
+            <param name="request">Dados da entrega.</param>
+            <response code="201">Cria entrega.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+        <member name="M:Logistica.API.Controllers.ShippingController.Delete(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <summary>
+            Delete entrega
+            </summary>
+            <param name="id">Id da entrega.</param>
+            <response code="200">Deleta entrega.</response>
+            <response code="400">Requisição inválida ou erro.</response>
+        </member>
+    </members>
+</doc>

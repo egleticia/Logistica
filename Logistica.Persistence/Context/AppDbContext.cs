@@ -13,6 +13,7 @@ public class AppDbContext : DbContext
     public DbSet<Product> Product { get; set; }
     public DbSet<Receiver> Receiver { get; set; }
     public DbSet<Shipping> Shipping { get; set; }
+    public DbSet<PurchaseNotification> PurchaseNotification { get; set; }
 
 }
 
