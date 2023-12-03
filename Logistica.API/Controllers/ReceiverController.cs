@@ -3,7 +3,7 @@
 
 namespace Logistica.API.Controllers
 {
-    [Route("api/receiver")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ReceiverController : ControllerBase
     {

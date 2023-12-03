@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "5f+03daJAXGCO2Ip7ycpMgrmDSog0GVfRft1QqzavDYdKBz0/6lsk8DkdXC/+QX/JP+QyEn8qa6r7bLyIqQYgg==",
+  "dgSpecHash": "ibsza+pxFmJouWQfsu1LKsHmKYpXWXelPKYeypgcsbwgSlxTM19s2iu9DQCrQyYNOC+/HuQTxY96CcQJL48V/g==",
   "success": true,
   "projectFilePath": "C:\\GIT\\Logistica\\Logistica.API\\Logistica.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Letic\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.0\\fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
+    "C:\\Users\\Letic\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\Letic\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -5,6 +5,7 @@ namespace Logistica.Domain.Entities
 {
     public class Address : BaseEntity
     {
+        public Guid Id { get; set; }
         public string Street { get; set; }
         public string Number { get; set; }
         public string PostalCode { get; set; }

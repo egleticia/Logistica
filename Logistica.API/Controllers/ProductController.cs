@@ -3,7 +3,7 @@
 
 namespace Logistica.API.Controllers
 {
-    [Route("api/product")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ProductController : ControllerBase
     {

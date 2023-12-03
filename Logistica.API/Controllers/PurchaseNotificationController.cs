@@ -3,7 +3,7 @@
 
 namespace Logistica.API.Controllers
 {
-    [Route("api/purchaseNotification")]
+    [Route("api/[controller]")]
     [ApiController]
     public class PurchaseNotificationController : ControllerBase
     {

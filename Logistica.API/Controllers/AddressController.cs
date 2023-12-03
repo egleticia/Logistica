@@ -1,37 +1,26 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Logistica.Application.UseCases.Address.CreateAddress;
+using MediatR;
+using Microsoft.AspNetCore.Mvc;
 
 
 namespace Logistica.API.Controllers
 {
-    [Route("api/address")]
+    [Route("api/[controller]")]
     [ApiController]
     public class AddressController : ControllerBase
     {
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+        IMediator _mediator;
 
-        [HttpGet("{id}")]
-        public string Get(int id)
+        public AddressController(IMediator mediator)
         {
-            return "value";
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<IActionResult> Create(CreateAddressRequest request)
         {
-        }
-
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            var product = await _mediator.Send(request);
+            return Ok(product);
         }
     }
 }

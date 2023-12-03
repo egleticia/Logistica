@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-
 namespace Logistica.API.Controllers
 {
-    [Route("api/shipping")]
+    [Route("api/[controller]")]
     [ApiController]
     public class ShippingController : ControllerBase
     {

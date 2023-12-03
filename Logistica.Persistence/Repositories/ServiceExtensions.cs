@@ -19,6 +19,7 @@ namespace Logistica.Persistence.Repositories
             services.AddScoped<IPurchaseNotificationRepository, PurchaseNotificationRepository>();
             services.AddScoped<IReceiverRepository, ReceiverRepository>();
             services.AddScoped<IShippingRepository, ShippingRepository>();
+            services.AddScoped<IKafkaProducer, KafkaProducer > ();
         }
     }
 }
