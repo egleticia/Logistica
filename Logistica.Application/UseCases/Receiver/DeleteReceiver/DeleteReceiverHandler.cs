@@ -1,6 +1,4 @@
-﻿
-using AutoMapper;
-using Logistica.Application.UseCases.Product.DeleteProduct;
+﻿using AutoMapper;
 using Logistica.Domain.Interfaces;
 using MediatR;
 

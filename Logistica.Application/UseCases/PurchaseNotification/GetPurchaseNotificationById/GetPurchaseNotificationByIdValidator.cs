@@ -1,5 +1,4 @@
-﻿
-using FluentValidation;
+﻿using FluentValidation;
 
 namespace Logistica.Application.UseCases.PurchaseNotification.GetPurchaseNotificationById
 {

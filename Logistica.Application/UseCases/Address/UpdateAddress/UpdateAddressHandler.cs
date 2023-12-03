@@ -16,8 +16,7 @@ namespace Logistica.Application.UseCases.Address.UpdateAddress
             _addressRepository = addressRepository;
             _mapper = mapper;
         }
-        public async Task<UpdateAddressResponse> Handle(UpdateAddressRequest command,
-                                                     CancellationToken cancellationToken)
+        public async Task<UpdateAddressResponse> Handle(UpdateAddressRequest command, CancellationToken cancellationToken)
         {
             var address = await _addressRepository.Get(command.Id, cancellationToken);
 

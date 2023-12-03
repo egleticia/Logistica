@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 
 namespace Logistica.Application.UseCases.Product.UpdateProduct
 {
-    internal sealed record UpdateProductMapper
+    public sealed class UpdateProductMapper : Profile
     {
+        public UpdateProductMapper()
+        {
+            CreateMap<UpdateProductRequest, Domain.Entities.Product>();
+            CreateMap<Domain.Entities.Product, UpdateProductResponse>();
+        }
     }
 }

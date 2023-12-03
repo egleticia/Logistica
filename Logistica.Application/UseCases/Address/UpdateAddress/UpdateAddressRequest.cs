@@ -1,6 +1,4 @@
-﻿
-using Logistica.Application.UseCases.Address.CreateAddress;
-using Logistica.Domain.Enums;
+﻿using Logistica.Domain.Enums;
 using MediatR;
 
 namespace Logistica.Application.UseCases.Address.UpdateAddress
